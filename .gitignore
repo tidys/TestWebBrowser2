@@ -1,0 +1,6 @@
+.idea/
+.vs/
+Backup/
+*.VC.opendb
+*.db
+UpgradeLog.htm

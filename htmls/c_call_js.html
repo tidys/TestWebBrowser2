@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>测试WebBrowser1</title>
+
+<script type="text/javascript">
+
+function Add1(value1, value2) {  
+    window.alert('Add1');
+    return value1 + value2;  
+}  
+
+function Add2(value1, value2) {  
+    var array = new Array();  
+    array[0] = value1;  
+    array[1] = value2;  
+    array[2] = value1 + value2;  
+
+    window.alert('Add2');
+    return array;  
+}  
+
+function Add3(value1, value2) {  
+    var data = new Object();  
+    data.result = value1 + value2;  
+    data.str = "Hello,World!";  
+
+    window.alert('Add3');
+    return data;  
+}  
+
+function test1(){
+    return function() {
+            alert('test1');
+    }
+}
+
+</script> 
+</head>
+
+<body>
+<p>
+test
+</p>
+</body>
+</html>
